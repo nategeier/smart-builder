@@ -1,0 +1,85 @@
+Arguments: 
+  /Users/nathanaelgeier/.nvm/versions/node/v9.5.0/bin/node /Users/nathanaelgeier/.nvm/versions/node/v9.5.0/bin/yarn
+
+PATH: 
+  /Users/nathanaelgeier/.nvm/versions/node/v9.5.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.5.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "DagNab",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+      "pify": "^3.0.0",
+      "react": "^16.3.1",
+      "react-dom": "^16.3.1",
+      "solc": "^0.4.21",
+      "styled-components": "^3.2.5",
+      "web3": "^1.0.0-beta.33"
+    },
+    "scripts": {
+      "build": "webpack --mode production",
+      "start": "webpack-dev-server --mode development --open",
+      "chain": "node_modules/.bin/ganache-cli",
+      "test": "jest --watch"
+    },
+    "devDependencies": {
+      "babel-core": "^6.26.0",
+      "babel-jest": "^22.4.3",
+      "babel-loader": "^7.1.4",
+      "babel-plugin-transform-async-to-generator": "^6.24.1",
+      "babel-polyfill": "^6.26.0",
+      "babel-preset-env": "^1.6.1",
+      "babel-preset-es2015": "^6.24.1",
+      "babel-preset-react": "^6.24.1",
+      "babel-preset-stage-0": "^6.24.1",
+      "ganache-cli": "^6.1.0",
+      "html-webpack-plugin": "^3.2.0",
+      "jest": "^22.4.3",
+      "react-test-renderer": "^16.3.1",
+      "webpack": "^4.5.0",
+      "webpack-cli": "^2.0.13",
+      "webpack-dev-server": "^3.1.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: /Users/nathanaelgeier/blockchains/first-contract/node_modules/sha3: Command failed.
+  Exit code: 1
+  Command: sh
+  Arguments: -c node-gyp rebuild
+  Directory: /Users/nathanaelgeier/blockchains/first-contract/node_modules/sha3
+  Output:
+  module.js:557
+      throw err;
+      ^
+  
+  Error: Cannot find module '/Users/nathanaelgeier/.nvm/versions/node/v9.5.0/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js'
+      at Function.Module._resolveFilename (module.js:555:15)
+      at Function.Module._load (module.js:482:25)
+      at Function.Module.runMain (module.js:701:10)
+      at startup (bootstrap_node.js:190:16)
+      at bootstrap_node.js:662:3
+      at ProcessTermError.MessageError (/Users/nathanaelgeier/.nvm/versions/node/v9.5.0/lib/node_modules/yarn/lib/cli.js:186:110)
+      at new ProcessTermError (/Users/nathanaelgeier/.nvm/versions/node/v9.5.0/lib/node_modules/yarn/lib/cli.js:226:113)
+      at ChildProcess.<anonymous> (/Users/nathanaelgeier/.nvm/versions/node/v9.5.0/lib/node_modules/yarn/lib/cli.js:30281:17)
+      at ChildProcess.emit (events.js:160:13)
+      at maybeClose (internal/child_process.js:943:16)
+      at Socket.stream.socket.on (internal/child_process.js:363:11)
+      at Socket.emit (events.js:160:13)
+      at Pipe._handle.close [as _onclose] (net.js:562:12)
